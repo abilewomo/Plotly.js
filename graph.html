@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Include the dataset, CAGR-->
+    <script src="./cagr.js"></script>
+</head>
+<!--Plot multiple line chart when the page loads-->
+<body onload="multipleCharts()">
+    <fieldset>
+        <legend>Select what chart to view</legend>
+        <p></p>
+        <p>Sector &nbsp; &nbsp;
+            <select id="sectors">
+                <option value="" selected>All Sectors</option>
+                <option value="Basic Materials">Basic Materials</option>
+                <option value="Consumer Discretionary">Consumer Discretionary</option>
+                <option value="Consumer Staples">Consumer Staples</option>
+                <option value="Energy">Energy</option>
+                <option value="Finance">Finance</option>
+                <option value="Health Care">Health Care</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Technology">Technology</option>
+                <option value="Telecommunications">Telecommunications</option>
+                <option value="Utilities">Utilities</option>
+            </select>
+        </p>
+        <p>Chart Type &nbsp; &nbsp;
+            <select id="chart">
+                <option value="line" selected>Line Chart</option>
+                <option value="markers">Scatter Chart</option>
+            </select>
+        </p>
+        <!-- The singleChart() function is called when this button is clicked-->
+        <button onclick="singleChart()">Plot Chart</button>
+    </fieldset>
+    </fieldset>
+    <div id="myGraph"></div>
+
+
+
+    <script src="graph.js"></script>
+</body>
+
+</html>
