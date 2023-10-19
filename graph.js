@@ -1,6 +1,6 @@
 //X(Dates) is constant for all sectors so pick any of the X values for the
 const xAxis = CAGR["Basic Materials"]["X"];
-
+var field = document.querySelector("select").value;
 //Function to plot a multi-line chart
 function multipleCharts() {
   //get the value for the type of chart that should be plotted
@@ -66,3 +66,4 @@ function plotChart(data, mainTitle, yTitle) {
   // Create the graph
   Plotly.newPlot("myGraph", data, layout);
 }
+document.addEventListener("change", singleChart)

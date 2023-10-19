@@ -8,12 +8,13 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- Include the dataset, CAGR-->
     <script src="./cagr.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <!--Plot multiple line chart when the page loads-->
 <body onload="multipleCharts()">
     <fieldset>
-        <legend>Select what chart to view</legend>
-        <p></p>
+        <legend>Compound Annual Growth Rate (CAGR)</legend>
+        <p>Select a sector to view</p>
         <p>Sector &nbsp; &nbsp;
             <select id="sectors">
                 <option value="" selected>All Sectors</option>
@@ -35,13 +36,9 @@
                 <option value="markers">Scatter Chart</option>
             </select>
         </p>
-        <!-- The singleChart() function is called when this button is clicked-->
-        <button onclick="singleChart()">Plot Chart</button>
     </fieldset>
     </fieldset>
     <div id="myGraph"></div>
-
-
 
     <script src="graph.js"></script>
 </body>

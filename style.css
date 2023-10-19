@@ -1,0 +1,20 @@
+body{
+    background-color: #d3d3d3;
+}
+fieldset{
+    background-color: #736a89;
+    color: white;
+    font-size: 1.5em;
+}
+ legend{
+    background-color: #736a89;
+    padding: 10px;
+    border-radius: 1em ;
+    box-shadow: 5px 5px  #5c5c5c;
+}
+select{
+    border: none;
+    padding: 5px;
+    color: #5c5c5c;
+    font-size: .7em;;
+}
