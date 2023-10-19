@@ -66,4 +66,6 @@ function plotChart(data, mainTitle, yTitle) {
   // Create the graph
   Plotly.newPlot("myGraph", data, layout);
 }
-document.addEventListener("change", singleChart)
+document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("change", singleChart);
+});
